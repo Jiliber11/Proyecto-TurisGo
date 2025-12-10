@@ -1,0 +1,389 @@
+:root {
+  --primary-color: #00a8e8ff;
+  --primary-dark: #007ea7ff;
+  --secondary-color: #003459ff;
+  --accent-color: #00a8e8ff;
+  --background-light: #ffffffff;
+  --text-dark: #00171fff;
+  --text-light: #003459ff;
+  --white: #ffffffff;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --gray-light: #f5f5f5;
+  --gray-medium: #888888;
+  --gray-text: #666666;
+  --gray-border: #dddddd;
+  --rating-star: #ffc107;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--gray-light);
+}
+/* Header */
+.header {
+  background: var(--text-dark);
+  color: var(--white);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  gap: 3rem;
+}
+
+.nav-brand h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.nav-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/Desierto.png") center/cover no-repeat;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.hero-SanAgustin {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/banner-SanAgustín.jpg") center/cover no-repeat;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.hero-Termales {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/termales.jpg") center/cover no-repeat;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.hero-ManoGigante {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/manoGigante.png") center/cover no-repeat;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.hero-Nevado {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/nevadoHuila.png") center/cover no-repeat;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.hero-PlayaJuncal {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/playaJuncal.png") center/cover no-repeat;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 12px 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Intro Section */
+.intro {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  text-align: justify;
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+/* Sections */
+.section {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link .card {
+  cursor: pointer;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.card-link:hover .card {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px 15px 5px;
+  font-size: 1.3rem;
+  color: var(--text-dark);
+}
+
+.card p {
+  padding: 0 15px 10px;
+  color: var(--gray-text);
+  font-size: 0.95rem;
+}
+
+.rating {
+  padding: 0 15px 15px;
+  color: var(--rating-star);
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid var(--gray-border);
+  margin-top: 60px;
+}
+
+footer p {
+  color: var(--white);
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para la sección de Recomendación Destacada */
+.recomendacion-destacada {
+    padding: 60px 20px;
+    background-color: #f0f8ff; /* Fondo muy claro para diferenciar */
+    border-top: 2px solid #e0e0e0;
+}
+
+.destacado-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; /* Contenido a la izquierda, imagen a la derecha */
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 52, 89, 0.1); /* Usando el secundario para la sombra */
+    overflow: hidden;
+}
+
+.destacado-contenido {
+    padding: 40px;
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+.destacado-contenido h2 {
+    color: #003459ff; /* Color secundario/oscuro */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.destacado-contenido h3 {
+    color: #00a8e8ff; /* Color primario/acento */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.destacado-contenido p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.destacado-img {
+    width: 40%; /* La imagen ocupa el 40% del ancho */
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+
+.destacado-btn {
+    display: inline-block;
+    background-color: #00a8e8ff; /* Color primario */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.destacado-btn:hover {
+    background-color: #007ea7ff; /* Color oscuro al pasar el ratón */
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .destacado-card {
+        flex-direction: column; /* Apila el contenido y la imagen en móvil */
+    }
+
+    .destacado-img {
+        width: 100%; /* La imagen ocupa todo el ancho */
+        height: 200px; /* Altura fija en móvil */
+    }
+
+    .destacado-contenido {
+        padding: 30px;
+        text-align: center;
+    }
+}
